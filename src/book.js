@@ -5,10 +5,9 @@ const Book = (props) => {
       <article className='book'>
         <img src={img} alt={title} />
         <h2>{title}</h2>
-        {/* this is not going to work */}
-        <h4>{author}</h4>
+  
+        <h4>{author} </h4>
       </article>
     );
-  };
-
+};
 export default Book;
