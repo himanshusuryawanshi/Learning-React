@@ -7,13 +7,14 @@ import Book from './book'
 
 const BookList = () => {
   return (
+    <>
+    <h1>amazon best sellers</h1>
     <section className='booklist'>
-      {/* //map is the function which makes duplicate array for each element      */}
-      {books.map((book) => {
-        return <Book {...book} key={book.id} />;
+      {books.map((book, index) => {
+        return <Book {...book} key={book.id} number={index} />;
       })}
-
     </section>
+    </>
   );
 };
 
